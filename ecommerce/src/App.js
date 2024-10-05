@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './components/Navbar.js';
+import NavbarComponents from './components/NavbarComponents.js';
 import Home from './pages/Home.js';
 import ProductPage from './pages/ProductPage.js';
 import CartPage from './pages/CartPage.js';
@@ -11,7 +11,7 @@ function App(){
   return(
     <CartProvider>
       <Router>
-        <Navbar/>
+        <NavbarComponents/>
         <Container>
           <Routes>
             <Route path="/" element={<Home/>}/>

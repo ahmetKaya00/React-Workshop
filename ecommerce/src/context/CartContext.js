@@ -8,7 +8,7 @@ export function CartProvider({children}) {
 
     const addToCart = (product) => {
         setCart(prevCart => [...prevCart, product]);
-        alertify.succes(`${product.title} added to cart`);
+        alertify.success(`${product.title} added to cart`);
     }
 
     const removeFromCart = (id) =>{
